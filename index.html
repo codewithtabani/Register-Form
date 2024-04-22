@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body {
+                background-color: rgb(100, 80, 220);
+            }
+
+            #container {
+                min-height: 300px;
+                width: 600px;
+                background-color: white;
+                border-radius: 10px;
+                margin:100px auto;
+            }
+
+            #register {
+                background-color: rgb(0, 0, 100);
+                width: calc(100% - 40px);
+                height: 50px;
+                padding:2px 10px 5px 30px;
+                border-radius:10px 10px 0 0 ;
+                
+            }
+
+            #register h1 {
+                color: white;
+                text-transform: capitalize;
+                position: relative;
+                bottom: 10px;
+            }
+
+            #text>p {
+                margin-left: 65%;
+            }
+
+            .span1 {
+                color: red;
+                padding-left: 5px;
+            }
+
+            #logos {
+                text-align: center;
+            }
+
+            i {
+                display: inline-block;
+                font-size: 30px;
+                margin-right: 5px;
+            }
+
+            #form {
+                margin-left:50px;
+                margin-right: 50px;
+            }
+
+            input {
+                margin-bottom: 20px;
+                padding: 5px;
+                height: 25px;
+                width:90%;
+                padding-left: 35px;
+                border: 1px solid slategrey;
+                border-radius: 5px;
+                outline: none;
+                cursor:pointer ;
+            }
+            input:focus{
+                border-bottom: 1px solid red;
+            }
+            input:hover{
+                border-bottom: 2px solid pink;
+            }
+            input:hover::placeholder{
+                color: red;
+            }
+            #username:active{
+                border-bottom: 1px solid rgb(0, 150, 0);
+            }
+
+            #username input {
+                background-image: url(images/1.jpg);
+                background-size: 35px;
+                background-repeat: no-repeat;
+                background-position: left center
+            }
+
+            #email input {
+                background-image: url(images/2.png);
+                background-size: 35px;
+                background-repeat: no-repeat;
+                background-position: left center
+            }
+
+            #phone input {
+                background-image: url(images/3.jpg);
+                background-size: 30px;
+                background-repeat: no-repeat;
+                background-position: left center
+            }
+
+            #password input{
+                width: calc(90% - 25px);
+                padding-right: 30px;
+            background-image: url(images/4.png),url(images/5.jpg);
+            background-size: 21px,25px;
+            background-repeat: no-repeat,no-repeat;
+            background-position: left center,right center;
+                }
+
+                #rpassword input{
+                    width: calc(90% - 25px);
+                    padding-right: 30px;
+            background-image: url(images/4.png),url(images/5.jpg);
+            background-size: 21px,25px;
+            background-repeat: no-repeat,no-repeat;
+            background-position: left center,right center;
+                }
+                #foot{
+                    margin: 0 60px;
+                }
+                #footer{
+                background-color: rgb(0, 0, 90);
+                padding: 15px 15px 0 110px;
+                border-radius: 0 0 10px 10px;
+                }
+            input[type="submit"]{
+                background-color: aqua;
+                height: 40px;
+                width: 80%;
+                text-align: center;
+                border-radius: 5px;
+            border: 2px solid greenyellow;
+            }
+            input[type="submit"]:hover{
+                background-color: aquamarine;
+            }
+            input[value]{
+                font-weight:500;
+                text-transform: uppercase;
+            }
+            input
+        </style>
+    </head>
+
+<body>
+    <div id="container">
+        <div id="register">
+            <h1>register</h1>
+        </div>
+        <div id="text">
+            <p>Already member?<span class="span1">Sign in</span></p>
+        </div>
+        <div id="logos">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-firefox"></i>
+        </div>'
+
+        <div id="form">
+            <form action="">
+                <div id="username">
+                    <label for="">
+                        <input type="text" name="username" placeholder="username">
+                    </label>
+                </div>
+
+                <div id="email">
+                    <label for="">
+                        <input type="email" name="email" placeholder="email">
+                    </label>
+                </div>
+
+                <div id="phone">
+                    <label for="">
+                        <input type="number" name="phone" placeholder="phone">
+                    </label>
+                </div>
+
+                <div id="password"><label for="">
+                        <input type="password" name="password" placeholder="password">
+                    </label></div>
+
+                <div id="rpassword"><label for="">
+                        <input type="password" name="repeat password" placeholder="repeat password">
+                    </label></div>
+        </div>
+        </form>
+        <div id="foot">
+            <p>By clicking register you agree to our <span class="span1">terms of service</span></p>
+        </div>
+
+        <div id="footer">
+            <input type="submit" name="" id="" value="Register">
+        </div>
+    </div>
+
+    <img src="images/mudassir.png" alt="loading" style="border-radius: 50%;">
+    <p style="text-transform: capitalize;color: white;font-size: 35px;font-family: Arial, Helvetica, sans-serif ;font-weight: bold;position: relative;bottom: 340px;left: 500px;">mudassir Tabani <br>class 7 <br>age 12</p>
+    
+</body>
+
+</html>
